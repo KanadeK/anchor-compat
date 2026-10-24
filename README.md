@@ -51,7 +51,7 @@ Exit `0`: all old addresses remain or are explicitly retired, with no current du
 
 Schema 1 reports include `ok`, `missing` (baseline file and line), `retired`, `added`, `findings`, and `pages_checked`. Snapshot refuses duplicate IDs, whitespace in IDs, and duplicate ID attributes. Legacy `<a name>` is included. Template contents, comments, raw text elements and noscript contents are excluded. Empty IDs are ignored.
 
-The version 0.1.0 boundary is deliberately small:
+The version 0.1.1 boundary is deliberately small:
 
 - UTF8 static `.html` and `.htm` only; no browser, JavaScript execution, network requests or redirect verification. Runtime-generated IDs, shadow DOM and noscript-dependent behavior need browser tests.
 - ID presence is checked; semantic equivalence, visibility and successful navigation are not proved. This is not an HTML validator or an accessibility audit.

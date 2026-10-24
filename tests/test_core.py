@@ -147,6 +147,7 @@ class SiteTests(unittest.TestCase):
         for content in [
             "{",
             "[]",
+            "[" * 2000 + "]" * 2000,
             json.dumps({**good, "schema": True}),
             json.dumps({**good, "findings": [{}]}),
             json.dumps({**good, "pages": {}}),

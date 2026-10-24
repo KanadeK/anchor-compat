@@ -225,7 +225,7 @@ def load_baseline(path: Path) -> dict:
         if count > MAX_ANCHORS:
             raise ValueError
         return baseline
-    except (ValueError, KeyError, TypeError) as exc:
+    except (ValueError, KeyError, TypeError, RecursionError) as exc:
         raise InputError("invalid or unhealthy schema-1 baseline") from exc
 
 

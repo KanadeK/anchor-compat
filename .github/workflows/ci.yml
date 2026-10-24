@@ -23,5 +23,5 @@ jobs:
       - run: python -m coverage run -m unittest discover -s tests -v
       - run: python -m coverage report
       - run: python -m build
-      - run: python -m pip install --force-reinstall --no-deps --no-index --find-links dist anchor-compat==0.1.0
+      - run: python -m pip install --force-reinstall --no-deps --no-index --find-links dist anchor-compat==0.1.1
       - run: python -I -m anchor_compat --version
